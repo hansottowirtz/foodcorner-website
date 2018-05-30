@@ -1,0 +1,7 @@
+<foodcorners-map (selectedFoodcorner)='setFoodcorner($event)'></foodcorners-map>
+<div class="footer" [ngClass]='{opened: selectedFoodcorner}'>
+  <div class="footer-inner">
+    <h3 class="footer-title">{{ selectedFoodcorner?.name }}</h3>
+    <a class="footer-button" [routerLink]="['/foodcorners', 'campus-groenenborger']">Bekijk leveraars</a>
+  </div>
+</div>

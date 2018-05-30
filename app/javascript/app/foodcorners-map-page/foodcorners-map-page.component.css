@@ -1,0 +1,32 @@
+.footer {
+  height: 0px;
+  overflow: hidden;
+  transition: height 300ms ease-in-out;
+  position: fixed;
+  z-index: 10;
+  bottom: 0;
+  background-color: white;
+  width: 100%;
+}
+
+.footer.opened {
+  height: 100px;
+}
+
+.footer-inner {
+  height: 100px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.footer-button {
+  text-decoration: none;
+  background-color: #222222;
+  color: white;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+foodcorners-map {
+  height: calc(100vh - 70px);
+}

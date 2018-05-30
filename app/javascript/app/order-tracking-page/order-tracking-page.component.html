@@ -1,0 +1,22 @@
+<h3>Bestelling #{{ orderId }}</h3>
+<ol>
+  <li class="done">
+    <div class="delivery-node"></div>
+    <div class="delivery-node-connector"></div>
+    Uw maaltijd wordt bereid
+  </li>
+  <li [ngClass]='{done: done}' (click)='setQR("82ca3ea45d711ce9")'>
+    <div class="delivery-node"></div>
+    <div class="delivery-node-connector"></div>
+    Uw maaltijd is onderweg
+  </li>
+  <li [ngClass]='{done: done}' (click)='setQR("6dc956021db3a9cf")'>
+    <div class="delivery-node"></div>
+    <div class="delivery-node-connector"></div>
+    Uw maaltijd is aangekomen
+
+    <img #qr class='qr'>
+    </img>
+  </li>
+</ol>
+

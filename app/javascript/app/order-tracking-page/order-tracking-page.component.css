@@ -1,0 +1,60 @@
+:host {
+  display: block;
+  padding: 10px;
+  text-align: center;
+}
+
+ol {
+  width: 300px;
+  text-align: left;
+  margin: 0 auto;
+  list-style-type: none;
+}
+
+li {
+  height: 40px;
+  padding: 20px 40px;
+  position: relative;
+  color: lightgrey;
+}
+
+li.done .delivery-node {
+  border-color: #222222;
+}
+
+li.done .delivery-node-connector {
+  background-color: #222222;
+}
+
+li.done {
+  color: black;
+}
+
+.delivery-node {
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  height: 8px;
+  width: 8px;
+  border: 4px solid lightgrey;
+  border-radius: 50%;
+}
+
+.delivery-node-connector {
+  position: absolute;
+  height: 66px;
+  left: 6px;
+  top: 34px;
+  width: 4px;
+  background-color: lightgrey;
+}
+
+li:last-of-type .delivery-node-connector {
+  display: none;
+}
+
+
+.qr {
+  height: 200px;
+  width: 200px;
+}
